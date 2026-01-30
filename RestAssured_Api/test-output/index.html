@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-API_Suite" class="navigator-link">
+              <span class="suite-name border-failed">API Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-API_Suite" class="navigator-link ">
+                    <span>E:\2026\Rest_Assured_Api_Automation\RestAssured_Api\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-API_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-API_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-API_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-API_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-API_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-API_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">35 methods, 5 failed,  1 skipped,  29 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-API_Suite" class="hide-methods failed suite-API_Suite"> (hide)</a> <!-- hide-methods failed suite-API_Suite -->
+                      <a href="#" panel-name="suite-API_Suite" class="show-methods failed suite-API_Suite"> (show)</a> <!-- show-methods failed suite-API_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-API_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.HamcrestTest" class="method navigator-link" hash-for-method="basicHamcrestValidation">basicHamcrestValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.CreateUserTest" class="method navigator-link" hash-for-method="createUserUsingJsonFile">createUserUsingJsonFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.CreateUserTest" class="method navigator-link" hash-for-method="createUserUsingPojo">createUserUsingPojo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.PostmanAuthTest" class="method navigator-link" hash-for-method="oauthClientCredentialsTest">oauthClientCredentialsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.SchemaValidation" class="method navigator-link" hash-for-method="schemaValidationTest">schemaValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-API_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-API_Suite" class="hide-methods skipped suite-API_Suite"> (hide)</a> <!-- hide-methods skipped suite-API_Suite -->
+                      <a href="#" panel-name="suite-API_Suite" class="show-methods skipped suite-API_Suite"> (show)</a> <!-- show-methods skipped suite-API_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-API_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.AuthFlowTest" class="method navigator-link" hash-for-method="completeAuthFlowTest">completeAuthFlowTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-API_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-API_Suite" class="hide-methods passed suite-API_Suite"> (hide)</a> <!-- hide-methods passed suite-API_Suite -->
+                      <a href="#" panel-name="suite-API_Suite" class="show-methods passed suite-API_Suite"> (show)</a> <!-- show-methods passed suite-API_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-API_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.PostmanAuthTest" class="method navigator-link" hash-for-method="basicAuthTest">basicAuthTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.PostmanAuthTest" class="method navigator-link" hash-for-method="bearerTokenTest">bearerTokenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.ExtentReportTestCases" class="method navigator-link" hash-for-method="extentReportApiTest">extentReportApiTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.UserMockApiTest" class="method navigator-link" hash-for-method="getUserMockTest">getUserMockTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Amit, role=Backend Developer})">postApi_csvDataDrivenTest({name=Amit, role=Backend Developer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Vanish, role=QA})">postApi_csvDataDrivenTest({name=Vanish, role=QA})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Neha, role=Product Manager})">postApi_csvDataDrivenTest({name=Neha, role=Product Manager})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Priya, role=Frontend Developer})">postApi_csvDataDrivenTest({name=Priya, role=Frontend Developer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Anjali, role=Developer})">postApi_csvDataDrivenTest({name=Anjali, role=Developer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Kiran, role=DevOps Engineer})">postApi_csvDataDrivenTest({name=Kiran, role=DevOps Engineer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Sneha, role=Manual Tester})">postApi_csvDataDrivenTest({name=Sneha, role=Manual Tester})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Rahul, role=Automation Engineer})">postApi_csvDataDrivenTest({name=Rahul, role=Automation Engineer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Arjun, role=Business Analyst})">postApi_csvDataDrivenTest({name=Arjun, role=Business Analyst})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_csvDataDrivenTest({name=Pooja, role=Scrum Master})">postApi_csvDataDrivenTest({name=Pooja, role=Scrum Master})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_dataDrivenTest(Anjali, Developer)">postApi_dataDrivenTest(Anjali, Developer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_dataDrivenTest(Vanish, QA)">postApi_dataDrivenTest(Vanish, QA)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_dataDrivenTest(TestUser, Manager)">postApi_dataDrivenTest(TestUser, Manager)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Rahul, role=Automation Engineer})">postApi_jsonDataDrivenTest({name=Rahul, role=Automation Engineer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Pooja, role=Scrum Master})">postApi_jsonDataDrivenTest({name=Pooja, role=Scrum Master})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Kiran, role=DevOps Engineer})">postApi_jsonDataDrivenTest({name=Kiran, role=DevOps Engineer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Neha, role=Product Manager})">postApi_jsonDataDrivenTest({name=Neha, role=Product Manager})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Sneha, role=Manual Tester})">postApi_jsonDataDrivenTest({name=Sneha, role=Manual Tester})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Vanish, role=QA})">postApi_jsonDataDrivenTest({name=Vanish, role=QA})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Arjun, role=Business Analyst})">postApi_jsonDataDrivenTest({name=Arjun, role=Business Analyst})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Amit, role=Backend Developer})">postApi_jsonDataDrivenTest({name=Amit, role=Backend Developer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Anjali, role=Developer})">postApi_jsonDataDrivenTest({name=Anjali, role=Developer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.DataDrivenPostTest" class="method navigator-link" hash-for-method="postApi_jsonDataDrivenTest({name=Priya, role=Frontend Developer})">postApi_jsonDataDrivenTest({name=Priya, role=Frontend Developer})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.ApiChainingTest" class="method navigator-link" hash-for-method="postGetDeleteFlowTest">postGetDeleteFlowTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Suite" title="tests.RetrySampleTest" class="method navigator-link" hash-for-method="retryExampleTest">retryExampleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-API_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-API_Suite" class="panel API_Suite">
+          <div class="suite-API_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.PostmanAuthTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="oauthClientCredentialsTest">
+                  </a> <!-- oauthClientCredentialsTest -->
+                  <span class="method-name">oauthClientCredentialsTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [403]
+	at tests.PostmanAuthTest.oauthClientCredentialsTest(PostmanAuthTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-failed -->
+          <div class="suite-API_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.HamcrestTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicHamcrestValidation">
+                  </a> <!-- basicHamcrestValidation -->
+                  <span class="method-name">basicHamcrestValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+JSON path ids doesn&apos;t match.
+Expected: a collection with size &lt;4&gt;
+  Actual: null
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at tests.HamcrestTest.basicHamcrestValidation(HamcrestTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-failed -->
+          <div class="suite-API_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SchemaValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="schemaValidationTest">
+                  </a> <!-- schemaValidationTest -->
+                  <span class="method-name">schemaValidationTest</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at tests.SchemaValidation.schemaValidationTest(SchemaValidation.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-failed -->
+          <div class="suite-API_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CreateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserUsingJsonFile">
+                  </a> <!-- createUserUsingJsonFile -->
+                  <span class="method-name">createUserUsingJsonFile</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [403] but found [404]
+	at tests.CreateUserTest.createUserUsingJsonFile(CreateUserTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserUsingPojo">
+                  </a> <!-- createUserUsingPojo -->
+                  <span class="method-name">createUserUsingPojo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [403] but found [404]
+	at tests.CreateUserTest.createUserUsingPojo(CreateUserTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-failed -->
+          <div class="suite-API_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.AuthFlowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="completeAuthFlowTest">
+                  </a> <!-- completeAuthFlowTest -->
+                  <span class="method-name">completeAuthFlowTest</span>
+                  <div class="stack-trace">org.testng.SkipException: Login did not return JSON
+	at tests.AuthFlowTest.completeAuthFlowTest(AuthFlowTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-skipped -->
+          <div class="suite-API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DataDrivenPostTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Amit, role=Backend Developer})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Amit, role=Backend Developer}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Amit, role=Backend Developer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Vanish, role=QA})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Vanish, role=QA}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Vanish, role=QA})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Neha, role=Product Manager})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Neha, role=Product Manager}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Neha, role=Product Manager})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Priya, role=Frontend Developer})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Priya, role=Frontend Developer}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Priya, role=Frontend Developer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Anjali, role=Developer})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Anjali, role=Developer}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Anjali, role=Developer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Kiran, role=DevOps Engineer})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Kiran, role=DevOps Engineer}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Kiran, role=DevOps Engineer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Sneha, role=Manual Tester})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Sneha, role=Manual Tester}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Sneha, role=Manual Tester})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Rahul, role=Automation Engineer})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Rahul, role=Automation Engineer}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Rahul, role=Automation Engineer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Arjun, role=Business Analyst})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Arjun, role=Business Analyst}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Arjun, role=Business Analyst})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_csvDataDrivenTest({name=Pooja, role=Scrum Master})">
+                  </a> <!-- postApi_csvDataDrivenTest({name=Pooja, role=Scrum Master}) -->
+                  <span class="method-name">postApi_csvDataDrivenTest</span>
+                  <span class="parameters">({name=Pooja, role=Scrum Master})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_dataDrivenTest(Anjali, Developer)">
+                  </a> <!-- postApi_dataDrivenTest(Anjali, Developer) -->
+                  <span class="method-name">postApi_dataDrivenTest</span>
+                  <span class="parameters">(Anjali,Developer)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_dataDrivenTest(Vanish, QA)">
+                  </a> <!-- postApi_dataDrivenTest(Vanish, QA) -->
+                  <span class="method-name">postApi_dataDrivenTest</span>
+                  <span class="parameters">(Vanish,QA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_dataDrivenTest(TestUser, Manager)">
+                  </a> <!-- postApi_dataDrivenTest(TestUser, Manager) -->
+                  <span class="method-name">postApi_dataDrivenTest</span>
+                  <span class="parameters">(TestUser,Manager)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Rahul, role=Automation Engineer})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Rahul, role=Automation Engineer}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Rahul, role=Automation Engineer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Pooja, role=Scrum Master})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Pooja, role=Scrum Master}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Pooja, role=Scrum Master})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Kiran, role=DevOps Engineer})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Kiran, role=DevOps Engineer}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Kiran, role=DevOps Engineer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Neha, role=Product Manager})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Neha, role=Product Manager}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Neha, role=Product Manager})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Sneha, role=Manual Tester})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Sneha, role=Manual Tester}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Sneha, role=Manual Tester})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Vanish, role=QA})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Vanish, role=QA}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Vanish, role=QA})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Arjun, role=Business Analyst})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Arjun, role=Business Analyst}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Arjun, role=Business Analyst})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Amit, role=Backend Developer})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Amit, role=Backend Developer}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Amit, role=Backend Developer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Anjali, role=Developer})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Anjali, role=Developer}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Anjali, role=Developer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postApi_jsonDataDrivenTest({name=Priya, role=Frontend Developer})">
+                  </a> <!-- postApi_jsonDataDrivenTest({name=Priya, role=Frontend Developer}) -->
+                  <span class="method-name">postApi_jsonDataDrivenTest</span>
+                  <span class="parameters">({name=Priya, role=Frontend Developer})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-passed -->
+          <div class="suite-API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UserMockApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserMockTest">
+                  </a> <!-- getUserMockTest -->
+                  <span class="method-name">getUserMockTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-passed -->
+          <div class="suite-API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ExtentReportTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="extentReportApiTest">
+                  </a> <!-- extentReportApiTest -->
+                  <span class="method-name">extentReportApiTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-passed -->
+          <div class="suite-API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.PostmanAuthTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicAuthTest">
+                  </a> <!-- basicAuthTest -->
+                  <span class="method-name">basicAuthTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bearerTokenTest">
+                  </a> <!-- bearerTokenTest -->
+                  <span class="method-name">bearerTokenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-passed -->
+          <div class="suite-API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RetrySampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="retryExampleTest">
+                  </a> <!-- retryExampleTest -->
+                  <span class="method-name">retryExampleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-passed -->
+          <div class="suite-API_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ApiChainingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postGetDeleteFlowTest">
+                  </a> <!-- postGetDeleteFlowTest -->
+                  <span class="method-name">postGetDeleteFlowTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Suite-class-passed -->
+        </div> <!-- panel API_Suite -->
+        <div panel-name="test-xml-API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\2026\Rest_Assured_Api_Automation\RestAssured_Api\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;API Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.ExtentTestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;API Tests&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;tests&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ApiChainingTest&quot;/&gt;
+      &lt;class name=&quot;tests.AuthFlowTest&quot;/&gt;
+      &lt;class name=&quot;tests.CreateUserTest&quot;/&gt;
+      &lt;class name=&quot;tests.DataDrivenPostTest&quot;/&gt;
+      &lt;class name=&quot;tests.ExtentReportTestCases&quot;/&gt;
+      &lt;class name=&quot;tests.HamcrestTest&quot;/&gt;
+      &lt;class name=&quot;tests.PostmanAuthTest&quot;/&gt;
+      &lt;class name=&quot;tests.RetrySampleTest&quot;/&gt;
+      &lt;class name=&quot;tests.SchemaValidation&quot;/&gt;
+      &lt;class name=&quot;tests.UserMockApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API Tests --&gt;
+&lt;/suite&gt; &lt;!-- API Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">API Tests (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_API_Suite');
+function tableData_API_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(35);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'postGetDeleteFlowTest')
+data.setCell(0, 2, 'tests.ApiChainingTest')
+data.setCell(0, 3, 4292);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'oauthClientCredentialsTest')
+data.setCell(1, 2, 'tests.PostmanAuthTest')
+data.setCell(1, 3, 488);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'basicHamcrestValidation')
+data.setCell(2, 2, 'tests.HamcrestTest')
+data.setCell(2, 3, 338);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(3, 2, 'tests.DataDrivenPostTest')
+data.setCell(3, 3, 315);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createUserUsingJsonFile')
+data.setCell(4, 2, 'tests.CreateUserTest')
+data.setCell(4, 3, 309);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'postApi_csvDataDrivenTest')
+data.setCell(5, 2, 'tests.DataDrivenPostTest')
+data.setCell(5, 3, 306);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'completeAuthFlowTest')
+data.setCell(6, 2, 'tests.AuthFlowTest')
+data.setCell(6, 3, 303);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'basicAuthTest')
+data.setCell(7, 2, 'tests.PostmanAuthTest')
+data.setCell(7, 3, 300);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'postApi_dataDrivenTest')
+data.setCell(8, 2, 'tests.DataDrivenPostTest')
+data.setCell(8, 3, 287);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'postApi_csvDataDrivenTest')
+data.setCell(9, 2, 'tests.DataDrivenPostTest')
+data.setCell(9, 3, 285);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'postApi_csvDataDrivenTest')
+data.setCell(10, 2, 'tests.DataDrivenPostTest')
+data.setCell(10, 3, 285);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'postApi_csvDataDrivenTest')
+data.setCell(11, 2, 'tests.DataDrivenPostTest')
+data.setCell(11, 3, 284);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'postApi_csvDataDrivenTest')
+data.setCell(12, 2, 'tests.DataDrivenPostTest')
+data.setCell(12, 3, 281);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'postApi_csvDataDrivenTest')
+data.setCell(13, 2, 'tests.DataDrivenPostTest')
+data.setCell(13, 3, 280);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'postApi_csvDataDrivenTest')
+data.setCell(14, 2, 'tests.DataDrivenPostTest')
+data.setCell(14, 3, 279);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(15, 2, 'tests.DataDrivenPostTest')
+data.setCell(15, 3, 279);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'postApi_csvDataDrivenTest')
+data.setCell(16, 2, 'tests.DataDrivenPostTest')
+data.setCell(16, 3, 279);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'postApi_dataDrivenTest')
+data.setCell(17, 2, 'tests.DataDrivenPostTest')
+data.setCell(17, 3, 278);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'postApi_dataDrivenTest')
+data.setCell(18, 2, 'tests.DataDrivenPostTest')
+data.setCell(18, 3, 277);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'postApi_csvDataDrivenTest')
+data.setCell(19, 2, 'tests.DataDrivenPostTest')
+data.setCell(19, 3, 267);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'retryExampleTest')
+data.setCell(20, 2, 'tests.RetrySampleTest')
+data.setCell(20, 3, 262);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'extentReportApiTest')
+data.setCell(21, 2, 'tests.ExtentReportTestCases')
+data.setCell(21, 3, 261);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'postApi_csvDataDrivenTest')
+data.setCell(22, 2, 'tests.DataDrivenPostTest')
+data.setCell(22, 3, 261);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'createUserUsingPojo')
+data.setCell(23, 2, 'tests.CreateUserTest')
+data.setCell(23, 3, 261);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(24, 2, 'tests.DataDrivenPostTest')
+data.setCell(24, 3, 259);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'bearerTokenTest')
+data.setCell(25, 2, 'tests.PostmanAuthTest')
+data.setCell(25, 3, 258);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(26, 2, 'tests.DataDrivenPostTest')
+data.setCell(26, 3, 257);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(27, 2, 'tests.DataDrivenPostTest')
+data.setCell(27, 3, 257);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(28, 2, 'tests.DataDrivenPostTest')
+data.setCell(28, 3, 254);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(29, 2, 'tests.DataDrivenPostTest')
+data.setCell(29, 3, 253);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'schemaValidationTest')
+data.setCell(30, 2, 'tests.SchemaValidation')
+data.setCell(30, 3, 251);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(31, 2, 'tests.DataDrivenPostTest')
+data.setCell(31, 3, 249);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(32, 2, 'tests.DataDrivenPostTest')
+data.setCell(32, 3, 244);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'postApi_jsonDataDrivenTest')
+data.setCell(33, 2, 'tests.DataDrivenPostTest')
+data.setCell(33, 3, 244);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'getUserMockTest')
+data.setCell(34, 2, 'tests.UserMockApiTest')
+data.setCell(34, 3, 42);
+window.suiteTableData['API_Suite']= { tableData: data, tableDiv: 'times-div-API_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <div id="times-div-API_Suite">
+              </div> <!-- times-div-API_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ApiChainingTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postGetDeleteFlowTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AuthFlowTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4301 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">completeAuthFlowTest</span>
+                <span class="method-start">4306 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4612 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createUserUsingJsonFile</span>
+                <span class="method-start">4613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createUserUsingPojo</span>
+                <span class="method-start">4931 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DataDrivenPostTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Vanish, role=QA})</span>
+                <span class="method-start">5213 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Anjali, role=Developer})</span>
+                <span class="method-start">5521 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Rahul, role=Automation Engineer})</span>
+                <span class="method-start">5804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Sneha, role=Manual Tester})</span>
+                <span class="method-start">6090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Amit, role=Backend Developer})</span>
+                <span class="method-start">6371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Priya, role=Frontend Developer})</span>
+                <span class="method-start">6652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Kiran, role=DevOps Engineer})</span>
+                <span class="method-start">6920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Neha, role=Product Manager})</span>
+                <span class="method-start">7206 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Arjun, role=Business Analyst})</span>
+                <span class="method-start">7487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_csvDataDrivenTest({name=Pooja, role=Scrum Master})</span>
+                <span class="method-start">7749 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_dataDrivenTest(Vanish, QA)</span>
+                <span class="method-start">8036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_dataDrivenTest(Anjali, Developer)</span>
+                <span class="method-start">8324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_dataDrivenTest(TestUser, Manager)</span>
+                <span class="method-start">8603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Vanish, role=QA})</span>
+                <span class="method-start">8900 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Anjali, role=Developer})</span>
+                <span class="method-start">9155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Rahul, role=Automation Engineer})</span>
+                <span class="method-start">9409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Sneha, role=Manual Tester})</span>
+                <span class="method-start">9659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Amit, role=Backend Developer})</span>
+                <span class="method-start">9919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Priya, role=Frontend Developer})</span>
+                <span class="method-start">10177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Kiran, role=DevOps Engineer})</span>
+                <span class="method-start">10493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Neha, role=Product Manager})</span>
+                <span class="method-start">10738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Arjun, role=Business Analyst})</span>
+                <span class="method-start">10983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postApi_jsonDataDrivenTest({name=Pooja, role=Scrum Master})</span>
+                <span class="method-start">11241 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ExtentReportTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11521 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">extentReportApiTest</span>
+                <span class="method-start">11522 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.HamcrestTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">basicHamcrestValidation</span>
+                <span class="method-start">11784 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PostmanAuthTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">basicAuthTest</span>
+                <span class="method-start">12132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bearerTokenTest</span>
+                <span class="method-start">12433 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">oauthClientCredentialsTest</span>
+                <span class="method-start">12693 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RetrySampleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">retryExampleTest</span>
+                <span class="method-start">13184 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SchemaValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">schemaValidationTest</span>
+                <span class="method-start">13447 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UserMockApiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startWireMock</span>
+                <span class="method-start">13699 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getUserMockTest</span>
+                <span class="method-start">14481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">stopWireMock</span>
+                <span class="method-start">14527 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

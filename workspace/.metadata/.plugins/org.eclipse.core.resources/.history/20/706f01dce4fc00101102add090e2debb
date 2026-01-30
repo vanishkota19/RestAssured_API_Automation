@@ -1,0 +1,22 @@
+package tests;
+import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.Test;
+import static org.hamcrest.Matchers.*;
+public class MockAPI {
+	
+	
+	@Test
+	public void mockApi_postmanTest() {
+
+	    given()
+	    .when()
+	        .get("https://abc123.mock.pstmn.io/users")
+	    .then()
+	        .statusCode(200)
+	        .body("name", equalTo("Vanish"))
+	        .body("role", equalTo("QA"));
+	}
+
+
+}

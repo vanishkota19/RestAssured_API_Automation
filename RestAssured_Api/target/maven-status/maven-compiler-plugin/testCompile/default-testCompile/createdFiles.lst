@@ -1,0 +1,9 @@
+tests\SchemaValidation.class
+tests\PostmanAuthTest.class
+tests\CreateUserTest.class
+tests\RetrySampleTest.class
+tests\UserMockApiTest.class
+tests\AuthFlowTest.class
+tests\HamcrestTest.class
+tests\postApi_csvDataDrivenTest.class
+tests\DataDrivenPostTest.class

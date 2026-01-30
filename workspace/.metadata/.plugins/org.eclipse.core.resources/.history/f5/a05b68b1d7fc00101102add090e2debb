@@ -1,0 +1,32 @@
+package utils;
+
+import java.util.List;
+import java.util.Map;
+
+import org.testng.annotations.DataProvider;
+
+public class TestDataProvider {
+
+    @DataProvider(name = "userData")
+    public static Object[][] userData() {
+        return new Object[][]{
+                {"Vanish", "QA"},
+                {"Anjali", "Developer"},
+                {"TestUser", "Manager"}
+        };
+        
+        
+    }
+    
+    @DataProvider(name = "jsonUserData")
+    public static Object[][] jsonUserData() {
+
+        List<Map<String, Object>> data =
+                JsonUtils.readJsonArray(
+                        "src/test/resources/testdata/users.json");
+
+        return data.stream()
+                .map(d -> new Object[]{d})
+                .toArray(Object[][]::new);
+    }
+}

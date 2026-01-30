@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="14.174" tests="32" errors="0" skipped="1" failures="4">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\2026\Rest_Assured_Api_Automation\RestAssured_Api\target\test-classes;E:\2026\Rest_Assured_Api_Automation\RestAssured_Api\target\classes;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-csv\1.10.0\commons-csv-1.10.0.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\DELL\.m2\repository\com\github\tomakehurst\wiremock-jre8\2.35.0\wiremock-jre8-2.35.0.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-server\9.4.49.v20220914\jetty-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-http\9.4.49.v20220914\jetty-http-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-io\9.4.49.v20220914\jetty-io-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-servlet\9.4.49.v20220914\jetty-servlet-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-security\9.4.49.v20220914\jetty-security-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-util-ajax\9.4.49.v20220914\jetty-util-ajax-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-servlets\9.4.49.v20220914\jetty-servlets-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-continuation\9.4.49.v20220914\jetty-continuation-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-util\9.4.49.v20220914\jetty-util-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-webapp\9.4.49.v20220914\jetty-webapp-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.49.v20220914\jetty-xml-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-proxy\9.4.49.v20220914\jetty-proxy-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-client\9.4.49.v20220914\jetty-client-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\http2\http2-server\9.4.49.v20220914\http2-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\http2\http2-common\9.4.49.v20220914\http2-common-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\http2\http2-hpack\9.4.49.v20220914\http2-hpack-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-server\9.4.49.v20220914\jetty-alpn-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-java-server\9.4.49.v20220914\jetty-alpn-java-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-openjdk8-server\9.4.49.v20220914\jetty-alpn-openjdk8-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-java-client\9.4.49.v20220914\jetty-alpn-java-client-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-client\9.4.49.v20220914\jetty-alpn-client-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-openjdk8-client\9.4.49.v20220914\jetty-alpn-openjdk8-client-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\DELL\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;C:\Users\DELL\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\DELL\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\DELL\.m2\repository\org\xmlunit\xmlunit-legacy\2.9.0\xmlunit-legacy-2.9.0.jar;C:\Users\DELL\.m2\repository\org\xmlunit\xmlunit-placeholders\2.9.0\xmlunit-placeholders-2.9.0.jar;C:\Users\DELL\.m2\repository\net\javacrumbs\json-unit\json-unit-core\2.36.0\json-unit-core-2.36.0.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\DELL\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\DELL\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\DELL\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\DELL\.m2\repository\org\ow2\asm\asm\9.4\asm-9.4.jar;C:\Users\DELL\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\DELL\.m2\repository\com\github\jknack\handlebars\4.3.1\handlebars-4.3.1.jar;C:\Users\DELL\.m2\repository\com\github\jknack\handlebars-helpers\4.3.1\handlebars-helpers-4.3.1.jar;C:\Users\DELL\.m2\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\DELL\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\DELL\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\DELL\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\DELL\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire12284948002520085744\surefirebooter-20260129135019768_3.jar C:\Users\DELL\AppData\Local\Temp\surefire12284948002520085744 2026-01-29T13-50-19_502-jvmRun1 surefire-20260129135019768_1tmp surefire_0-20260129135019768_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\2026\Rest_Assured_Api_Automation\RestAssured_Api\target\test-classes;E:\2026\Rest_Assured_Api_Automation\RestAssured_Api\target\classes;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-csv\1.10.0\commons-csv-1.10.0.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\DELL\.m2\repository\com\github\tomakehurst\wiremock-jre8\2.35.0\wiremock-jre8-2.35.0.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-server\9.4.49.v20220914\jetty-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-http\9.4.49.v20220914\jetty-http-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-io\9.4.49.v20220914\jetty-io-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-servlet\9.4.49.v20220914\jetty-servlet-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-security\9.4.49.v20220914\jetty-security-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-util-ajax\9.4.49.v20220914\jetty-util-ajax-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-servlets\9.4.49.v20220914\jetty-servlets-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-continuation\9.4.49.v20220914\jetty-continuation-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-util\9.4.49.v20220914\jetty-util-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-webapp\9.4.49.v20220914\jetty-webapp-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.49.v20220914\jetty-xml-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-proxy\9.4.49.v20220914\jetty-proxy-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-client\9.4.49.v20220914\jetty-client-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\http2\http2-server\9.4.49.v20220914\http2-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\http2\http2-common\9.4.49.v20220914\http2-common-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\http2\http2-hpack\9.4.49.v20220914\http2-hpack-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-server\9.4.49.v20220914\jetty-alpn-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-java-server\9.4.49.v20220914\jetty-alpn-java-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-openjdk8-server\9.4.49.v20220914\jetty-alpn-openjdk8-server-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-java-client\9.4.49.v20220914\jetty-alpn-java-client-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-client\9.4.49.v20220914\jetty-alpn-client-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\org\eclipse\jetty\jetty-alpn-openjdk8-client\9.4.49.v20220914\jetty-alpn-openjdk8-client-9.4.49.v20220914.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\DELL\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;C:\Users\DELL\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\DELL\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\DELL\.m2\repository\org\xmlunit\xmlunit-legacy\2.9.0\xmlunit-legacy-2.9.0.jar;C:\Users\DELL\.m2\repository\org\xmlunit\xmlunit-placeholders\2.9.0\xmlunit-placeholders-2.9.0.jar;C:\Users\DELL\.m2\repository\net\javacrumbs\json-unit\json-unit-core\2.36.0\json-unit-core-2.36.0.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\DELL\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\DELL\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\DELL\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\DELL\.m2\repository\org\ow2\asm\asm\9.4\asm-9.4.jar;C:\Users\DELL\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\DELL\.m2\repository\com\github\jknack\handlebars\4.3.1\handlebars-4.3.1.jar;C:\Users\DELL\.m2\repository\com\github\jknack\handlebars-helpers\4.3.1\handlebars-helpers-4.3.1.jar;C:\Users\DELL\.m2\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\DELL\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\DELL\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\DELL\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\DELL\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\DELL"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\2026\Rest_Assured_Api_Automation\RestAssured_Api"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire12284948002520085744\surefirebooter-20260129135019768_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="org.eclipse.jetty.http.HttpGenerator.STRICT" value="true"/>
+    <property name="java.runtime.version" value="22.0.1+8"/>
+    <property name="user.name" value="DELL"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-22.0.1+8"/>
+    <property name="localRepository" value="C:\Users\DELL\.m2\repository"/>
+    <property name="javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom" value="com.sun.org.apache.xpath.internal.jaxp.XPathFactoryImpl"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="jetty.git.hash" value="4231a3b2e4cb8548a412a789936d640a97b1aa0a"/>
+    <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="E:\2026\Rest_Assured_Api_Automation\RestAssured_Api"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/DELL/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149/jre/bin/server;C:/Users/DELL/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149/jre/bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;D:\Work Realated\apache-maven-3.9.8\bin;%M2_HOME%\bin;D:\Work Realated\ADAPT_CBF\ADAPT_CBF;D:\Work Realated\ADAPT_CBF\ADAPT_CBF\Resources;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\apache-maven-3.9.8\bin;e:\cursor\resources\app\bin;E:\Automation-practice\node.js\;C:\ProgramData\chocolatey\bin;E:\Automation-practice\node.js\npm;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-18.0.2.1\bin;D:\Work Realated\apache-maven-3.9.8\bin;%M2_HOME%\bin;D:\Work Realated\ADAPT_CBF\ADAPT_CBF;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\apache-maven-3.9.8\bin;C:\Users\DELL\AppData\Local\Programs\Ollama;C:\Users\DELL\AppData\Roaming\npm;E:\Automation-practice\node.js\npm;;C:\Windows\System32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="22.0.1+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="javax.xml.transform.TransformerFactory" value="com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="completeAuthFlowTest" classname="tests.AuthFlowTest" time="0.0">
+    <skipped message="Login did not return JSON"/>
+    <system-out><![CDATA[HTTP/1.1 404 Not Found
+Date: Thu, 29 Jan 2026 08:20:24 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-RAY: 9c574f6468b94738-BOM
+Set-Cookie: sails.sid=s%3A3Aaroc3jc_dWySjNToyJ_wobwcXRLgXc.wh6uwjtExgjFmJWe6gVgrw7SYtJTM6%2FLpy38k8%2Bl%2Fkg; Path=/; HttpOnly
+Set-Cookie: __cf_bm=.PQMKHvRX1I9KplGK_2Qp1N.YnTrrzWXnPnKwKGE9r0-1769674824-1.0.1.1-z0._CyRxqm8DsKxafnXyC4uBLL.ImtqIMRkn4LvAVQAS59vBXwrdVv.THMrkKOh7CzrwJqABLbVcFUwDhyQD_8xYrHaJyW4UIqz9NyOvbvk; path=/; expires=Thu, 29-Jan-26 08:50:24 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=3QTsblwSfN0lanSJQEu._t_Cq66ABV.KK2A79wCWfg0-1769674824595-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="createUserUsingJsonFile" classname="tests.CreateUserTest" time="0.342">
+    <failure message="expected [403] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [403] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at tests.CreateUserTest.createUserUsingJsonFile(CreateUserTest.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="createUserUsingPojo" classname="tests.CreateUserTest" time="0.282">
+    <failure message="expected [403] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [403] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at tests.CreateUserTest.createUserUsingPojo(CreateUserTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Vanish, role=QA}](1)" classname="tests.DataDrivenPostTest" time="0.868">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:25 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1ad-fPxQmExB4U/XbCaTOXfAGU6KfhQ"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3AQLjwCCUc_V9T-M8tePMKmnwmuMtpyK7P.9tP61T2%2BMce0aBSN2xsyUWgH3RRgs5a4rNraq6m68qI; Path=/; HttpOnly
+Set-Cookie: __cf_bm=6d2rEUM2xLjxPgH2Vh9r7sXNM3H66tB2ASX6PE8cfXY-1769674825-1.0.1.1-1liDKTaNEOrPi0kObXytlWo3RR0jCDtRTBeA1PIohREhhEUptEPQ0vd33ZjiXEWa7g8XaIjOYZoJipUWiHRNxW9g_NSg5_r3OcKV5aOuhLc; path=/; expires=Thu, 29-Jan-26 08:50:25 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=7KftbUht0qPZJP2jp9POOktIs88sbR0791UirAY3a_o-1769674825602-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f6aae023a1a-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "QA",
+        "name": "Vanish"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "29"
+    },
+    "json": {
+        "role": "QA",
+        "name": "Vanish"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Anjali, role=Developer}](2)" classname="tests.DataDrivenPostTest" time="0.291">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:26 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1bb-waMW5935nEpTBpB0lufqmvTayTU"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3ABLgRW3MS212_VmbHFq_xniXtk3h8D9SZ.adgQwKFiGzit98dPX%2Fn%2FoUtQdICRMlrh8fY2p3gkjXs; Path=/; HttpOnly
+Set-Cookie: __cf_bm=Bnw4zrsJAJNMrkldPAL5NBwARnq1RMdCny6KCBiK8ew-1769674826-1.0.1.1-WmdmSbrRCxCpkGYEnEEgZhnFqAo8G4wWSzpRTfb01gtCHQmKCi89nA64M48OfqMnHPOER1x85a4y5JuREH2h6YlgvXr28__1R2FXSGBgXa8; path=/; expires=Thu, 29-Jan-26 08:50:26 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=t4ZuSQDlYpB1eUOEP8hASLaQf_biKDe.es9B4MiZ7cE-1769674826472-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f701a27ff9f-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Developer",
+        "name": "Anjali"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "36"
+    },
+    "json": {
+        "role": "Developer",
+        "name": "Anjali"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Rahul, role=Automation Engineer}](3)" classname="tests.DataDrivenPostTest" time="0.303">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:26 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1cd-rWO8gg1+EZ8ddBJ3pl6twal4bR0"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3AJKMFIYjmT-V3Mc8Ac0Dk_AxuiRdjK27e.YVJg%2Bd4Vclv7zCcCkSUEVzJB7K%2B3Eu0UizkpdSsLAos; Path=/; HttpOnly
+Set-Cookie: __cf_bm=s6n_4.8o8GdUAqbjHeEFXtUnioBtgW.mWtwuhRwTT7I-1769674826-1.0.1.1-yIDWYHgwSB7Qv8.iPPe4jtdi.OTttiFxDcrAzyjepnVPkWMiWRpP2UyCnFU1w29rNlPDh3_SpP729Isb8zEIqsFN0T50ydDQEOa9nTd0iuM; path=/; expires=Thu, 29-Jan-26 08:50:26 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=riI3f95m_5Uf3R9IPPjTPXxrozlI7SBgNhU1F2AxrFw-1769674826779-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f71dbc63a39-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Automation Engineer",
+        "name": "Rahul"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "45"
+    },
+    "json": {
+        "role": "Automation Engineer",
+        "name": "Rahul"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Sneha, role=Manual Tester}](4)" classname="tests.DataDrivenPostTest" time="0.267">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:27 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1c1-RasWM+EEX6cnb//LSSynlgZbL5k"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3AvCOMHf4v5BNd7mKgMwGKMIluJm1LnJ6m.dMwKZo%2FTTMpgX6KO7c%2BZGt1cKCDqq3iI22TzkDDMets; Path=/; HttpOnly
+Set-Cookie: __cf_bm=hVOSiSb0OTGPhMvYXOuRUN8oogqQHJiQ9aCL4Fb2LTw-1769674827-1.0.1.1-38iaYs3sw4gSKLUlmJkwbKQwN_c.sWCygguaaODVaQTL_6g0UwAFWMBYkSR_M_gBWnHh.5CzM_VbQUQEG2LGpJc2BoTSDWxTaJqyaqfc8ks; path=/; expires=Thu, 29-Jan-26 08:50:27 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=f41wduG18RVJTmjbOVB29TrHB6dp2Y2V56AzvFJrBuc-1769674827045-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f73cb8237a5-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Manual Tester",
+        "name": "Sneha"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "39"
+    },
+    "json": {
+        "role": "Manual Tester",
+        "name": "Sneha"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Amit, role=Backend Developer}](5)" classname="tests.DataDrivenPostTest" time="0.277">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:27 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1c7-NYJ2/j1sMbY2MOy9frN6AfaQ/xY"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3AKIvjsbhdbJmlzKA-UOVzMqO00erru1M5.KiO%2Fv5Vc1DjOGxSnUXoxt8Elc%2FaMS6pDckOjSvX4KVM; Path=/; HttpOnly
+Set-Cookie: __cf_bm=Enn2WwwcyT9u.Qc_zWoByfsoLd2tCMJfBANCCb7Dv.Q-1769674827-1.0.1.1-u1w6v9Lnl0QEMlzQEzcuOZx1HTHFDHcExnKVXAmTKXOSrrPJnqR1WCztXXa4MhRd4olqGiGSVmxnnMY4VN_2ctpo49jMZ0DGoMgQ7qV6W0U; path=/; expires=Thu, 29-Jan-26 08:50:27 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=DdbGje0_pybpsLj8y_58WqBfQnWJH6wEQa7lbaosioc-1769674827329-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 6
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f757a6eff73-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Backend Developer",
+        "name": "Amit"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "42"
+    },
+    "json": {
+        "role": "Backend Developer",
+        "name": "Amit"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Priya, role=Frontend Developer}](6)" classname="tests.DataDrivenPostTest" time="0.289">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:27 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1cb-8ydu/xf47gFBTegS8T0W3UZ2LKU"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3Aft6asDdStEZ_2ABr0UNc_y1JoDggM6M6.EFfXYvjXeWEZ0M8cigiNnilsygvn2ZiQuVBGVzPQp2g; Path=/; HttpOnly
+Set-Cookie: __cf_bm=5DwvoUBtR5pr0WhqNj7CAYIEFVAJsk9WDnQH_aUDwk8-1769674827-1.0.1.1-TF1j23Ip9P2T2NAUKHXOVJkX0ogBrF5FYzoiRjtpYbymXvjuUuu2BUQ0vF2hXf47lj0jMmaeGAzKorG38v2fbAcD48VGZ75uGKis3FQso8U; path=/; expires=Thu, 29-Jan-26 08:50:27 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=zY.NPilaDKU_GLFawiZC3_C0i5zUt2TNBRj9eOCXTwk-1769674827611-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 6
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f773fdc4478-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Frontend Developer",
+        "name": "Priya"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "44"
+    },
+    "json": {
+        "role": "Frontend Developer",
+        "name": "Priya"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Kiran, role=DevOps Engineer}](7)" classname="tests.DataDrivenPostTest" time="0.278">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:27 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1c5-B70PWEx2FKflDbqCyT8VjJdGtz4"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3AYA__iYo89TeVuckhs89SjLWFcWz75Znp.tjXRp7ZhNO6ymT5WqM981BbfYEQg%2Br2%2FLG%2Ffk%2Bt%2Fyfo; Path=/; HttpOnly
+Set-Cookie: __cf_bm=yIlLzvCoONZZtObQkp7PXcyWFr1wKe.kAvmIRq2Fydk-1769674827-1.0.1.1-4Ev9cU0fq_9pOm87RN0UtZo5_doyXCu_PafUEJvXZfzKSgqoBys8ABldy1gkXibRDPmEPVRKHuEj69HyV0jBSs_piWlKrHVv7dyo.9rghBE; path=/; expires=Thu, 29-Jan-26 08:50:27 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=wWn8__nqWdKAZV0gc8vCUh_0_dH3xwd1W3.wsYgYhOs-1769674827893-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 6
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f78f92bffaa-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "DevOps Engineer",
+        "name": "Kiran"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "41"
+    },
+    "json": {
+        "role": "DevOps Engineer",
+        "name": "Kiran"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Neha, role=Product Manager}](8)" classname="tests.DataDrivenPostTest" time="0.286">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:28 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1c3-QaSUfr1r7jzlK/0o0WiJDXCuYI0"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3Aly7GxpyiTXg65oFbklgofolZEe_EG9vd.xrEozcO2hGfZpJXF8YzjvZc%2FJWqBEa6dzgifFTS9GuE; Path=/; HttpOnly
+Set-Cookie: __cf_bm=Ii9pO9VAwgpTFprAoEXGrx0MR12JJuYPxtZ3Og.6bLQ-1769674828-1.0.1.1-nnRxMi2o_anpT2CWcbbO3IBy1AolJ5kwr7CCGN6NjLFdsI_j488QjEUN2ajzQTarpfp4_MBpFVqEJP5KpxhMF5QQ07d2SaH2auVusSRwXU4; path=/; expires=Thu, 29-Jan-26 08:50:28 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=5ME.37lno_sNRIQKiQGBXlaI1rIMmgqPJoWsKx5cADE-1769674828185-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 6
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f7ac9a8c6aa-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Product Manager",
+        "name": "Neha"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "40"
+    },
+    "json": {
+        "role": "Product Manager",
+        "name": "Neha"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Arjun, role=Business Analyst}](9)" classname="tests.DataDrivenPostTest" time="0.283">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:28 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1c7-kRSeuOsjjUoPuaxMoek541SMWyg"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3APjAVQw6YkbtWL2vy3Ds2h2DtarIRbmgL.grTdxv%2BpXn2%2B57z4XIvMhuBK%2Fqw9amIc0aTIC%2FF0fMk; Path=/; HttpOnly
+Set-Cookie: __cf_bm=JxFKhaWLx9toBJW7XniV2I7cUecnB05Ew57EDNs8Tjs-1769674828-1.0.1.1-RK8rO_prIbHHz5VCBruVwqfzhV6gRze9nJ3J31xIdI9RGDMUoTb3AMjSbTugQD0ezKa7MgGM4dOLfG97aMyIC30PYWirgsh6H2Gz3okqXY0; path=/; expires=Thu, 29-Jan-26 08:50:28 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=dobuizigebxYBeZgibRPFCYll_qWex_RKh.ZaceXi9A-1769674828460-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f7c8aabc203-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Business Analyst",
+        "name": "Arjun"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "42"
+    },
+    "json": {
+        "role": "Business Analyst",
+        "name": "Arjun"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_csvDataDrivenTest[{name=Pooja, role=Scrum Master}](10)" classname="tests.DataDrivenPostTest" time="0.299">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:28 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1bf-DFsyWwN4GPW1QLG4Dc0cBpuE6/Y"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3ASuvQGITAcwXyrbSvRNVlH-pdp1lV9LiA.zi5HTsGQIPxhonyV8sYsZhWsZ3f95VPwKWotqpw4sxQ; Path=/; HttpOnly
+Set-Cookie: __cf_bm=TwsbqnXjKM_S8eo7bJgD5vkVryejzgaY8CATisVOX7A-1769674828-1.0.1.1-LMGYHCBTaJ_6S2GQRFNhcJ7WZuSv9dMQSow_2oIAtrJuepjDXNx1N9X8804EUUJZUFHPRMIpucUZlrc5oGzu00OFhvPDY4yE7Uz5OQg5FuU; path=/; expires=Thu, 29-Jan-26 08:50:28 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=21nm3akAdbVBqHNtYnL4g0vsLVVi4f7tY3IyRz6bU_4-1769674828766-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 6
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f7e5c1a8934-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Scrum Master",
+        "name": "Pooja"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "38"
+    },
+    "json": {
+        "role": "Scrum Master",
+        "name": "Pooja"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_dataDrivenTest[Vanish, QA](1)" classname="tests.DataDrivenPostTest" time="0.318">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:29 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1ad-fPxQmExB4U/XbCaTOXfAGU6KfhQ"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3AThtbDSit_kpGdfGNVr8xpG0aU1hSbqoQ.FLd6ulBL6y0anvU8UiU4YjH6uHlqY%2Fe51oiytULvuEc; Path=/; HttpOnly
+Set-Cookie: __cf_bm=vHduPg7kQEga1MvcnwZHiXgmmqxM21rwgXF2kKVkNbI-1769674829-1.0.1.1-uDWjiWtETYdNSXREU8JHbsdiEqu2PeI9nuLN9jXcvSUGoVJCbYPmBff9tjmdyuH5KUSvipnBacNIJTII7MtFOr8ml__v.jVjld7OnvJC6cQ; path=/; expires=Thu, 29-Jan-26 08:50:29 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=388DGo6yNV.jn1PzQhn9sVAe4VOveqCMsKRLjceYMWU-1769674829060-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f803c6cb8bf-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "QA",
+        "name": "Vanish"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "29"
+    },
+    "json": {
+        "role": "QA",
+        "name": "Vanish"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_dataDrivenTest[Anjali, Developer](2)" classname="tests.DataDrivenPostTest" time="0.271">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:29 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1bb-waMW5935nEpTBpB0lufqmvTayTU"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3Al2pEVLE--gOaAKqX5vI88VnUgSAmUVEl.31r3XQ%2B8XAEZlLq5hI2l67vyz3lizXtd4ccUCZTfwQo; Path=/; HttpOnly
+Set-Cookie: __cf_bm=LwiwcY3tQXzyhNGh6WxnyCZm9e.lzl0UId_gZJbsbGo-1769674829-1.0.1.1-KN5VZ7uJ4PaXprwfXpr6pJEJ.Z_nfW.w7.DgXnP28F0JTQpThi7mo9N56Kc4k6VmZO.teRbQiq41xR9GPU1bEBdrbT4OIhSKGm9MlILGus0; path=/; expires=Thu, 29-Jan-26 08:50:29 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=qAtpi_st0cIz2HXB.Vv2lt7pikcnMVIjYLTMUkEwvQU-1769674829354-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 6
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f8239a2b8bf-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Developer",
+        "name": "Anjali"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "36"
+    },
+    "json": {
+        "role": "Developer",
+        "name": "Anjali"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_dataDrivenTest[TestUser, Manager](3)" classname="tests.DataDrivenPostTest" time="0.335">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:29 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"1bb-/+/yXHU0kPX53XuN20qqerjrkwk"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3AQ0ZohitouN14wDH9ne2gZLhieooDoMmh.ufSqqtNyKEGi7kWcqNPVu4RxK1wSpc9pbxdfITu7Puo; Path=/; HttpOnly
+Set-Cookie: __cf_bm=kzphLyvasLraCBYR2iQJgVatOuR5sOtkqoXeMTYDLnU-1769674829-1.0.1.1-6sU9UAVmr_8UTfblsqjDePZtXIeQILbE0AX1Lk0p8xe.2OwwQU52DnqbrMO6zffX9nN2zECt8fpcNHKWTtRv8V_EUKZgOnNPOfMIn33ZsFo; path=/; expires=Thu, 29-Jan-26 08:50:29 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=mBAT0cEwp7gBQBn_TwTWu0XGLVrbVkw921elTIMD9II-1769674829679-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 6
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f83eb283a3a-BOM
+
+{
+    "args": {
+        
+    },
+    "data": {
+        "role": "Manager",
+        "name": "TestUser"
+    },
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)",
+        "accept-encoding": "gzip, br",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "x-forwarded-proto": "https",
+        "content-type": "application/json",
+        "content-length": "36"
+    },
+    "json": {
+        "role": "Manager",
+        "name": "TestUser"
+    },
+    "url": "https://postman-echo.com/post"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Vanish, role=QA}](1)" classname="tests.DataDrivenPostTest" time="0.278"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Anjali, role=Developer}](2)" classname="tests.DataDrivenPostTest" time="0.258"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Rahul, role=Automation Engineer}](3)" classname="tests.DataDrivenPostTest" time="0.256"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Sneha, role=Manual Tester}](4)" classname="tests.DataDrivenPostTest" time="0.254"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Amit, role=Backend Developer}](5)" classname="tests.DataDrivenPostTest" time="0.253"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Priya, role=Frontend Developer}](6)" classname="tests.DataDrivenPostTest" time="0.254"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Kiran, role=DevOps Engineer}](7)" classname="tests.DataDrivenPostTest" time="0.248"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Neha, role=Product Manager}](8)" classname="tests.DataDrivenPostTest" time="0.254"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Arjun, role=Business Analyst}](9)" classname="tests.DataDrivenPostTest" time="0.256"/>
+  <testcase name="postApi_jsonDataDrivenTest[{name=Pooja, role=Scrum Master}](10)" classname="tests.DataDrivenPostTest" time="0.273"/>
+  <testcase name="basicHamcrestValidation" classname="tests.HamcrestTest" time="0.422">
+    <failure message="1 expectation failed.&#10;JSON path ids doesn&apos;t match.&#10;Expected: a collection with size &lt;4&gt;&#10;  Actual: null&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+JSON path ids doesn't match.
+Expected: a collection with size <4>
+  Actual: null
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at tests.HamcrestTest.basicHamcrestValidation(HamcrestTest.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="basicAuthTest" classname="tests.PostmanAuthTest" time="0.299">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 22
+Connection: keep-alive
+CF-RAY: 9c574f990c8140f9-BOM
+etag: W/"16-sJz8uwjdDv0wvm7//BYdNw8vMbU"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3APHMzhiyMWel4n1Urlc-J4_MRZMiQiBa_.vGSUbaZJucYvqU6f7SPt165iR8NGbhUWMnrkxNXsPvs; Path=/; HttpOnly
+Set-Cookie: __cf_bm=Ww5SeHvmpmUHGzq3jlqeZYdbS7.QoGKqLSgx5oTjULw-1769674833-1.0.1.1-g_7au.vWx054C8c4OLuApDzJT6lTG0idZM1If7dF59yDx.MON20XtRgqprWn7.z0mjKJ_hpN.bMBDCOiLG10a2YTQS4TEWirbpaaCCuQYrw; path=/; expires=Thu, 29-Jan-26 08:50:33 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=HgNy2FrHjL6tASvYnZw5AIeqY.ijaYFCwmte7vYcw_c-1769674833022-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 6
+cf-cache-status: DYNAMIC
+Server: cloudflare
+
+{
+    "authenticated": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="bearerTokenTest" classname="tests.PostmanAuthTest" time="0.264">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2026 08:20:33 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"13e-GTvjv234odWiHRqz6dY+nK0t6Mg"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3AvDxOjLIYKUfjPSkAz7cXmpkmCQpKpeJc.4DD8j04K61psPBG4Gm9lMydsT3d1XAnU1F99LHrNbA8; Path=/; HttpOnly
+Set-Cookie: __cf_bm=5QBaKCamucpdc.m.4DU8bZj_XxC6j1lEimQ6GZv4zKc-1769674833-1.0.1.1-oGACY132RPz2Z7NpFqHTJdsPsFmB2KHC0dNOzkHqKBQcIRmttD_18vBUS6HhnM_.ptBT.hjTvbykyRHzfTNzMdpG6l3szhXR95kKTa4eNEc; path=/; expires=Thu, 29-Jan-26 08:50:33 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=jfx2FRl45EoDRNkRBNFpiNVBfxM3PaW7Zm0Z46dMBBM-1769674833291-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 9c574f9abe223e04-BOM
+
+{
+    "args": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "accept": "application/json, application/javascript, text/javascript, text/json",
+        "accept-encoding": "gzip, br",
+        "authorization": "Bearer sampleBearer123",
+        "x-forwarded-proto": "https",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/22.0.1)"
+    },
+    "url": "https://postman-echo.com/get"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="oauthClientCredentialsTest" classname="tests.PostmanAuthTest" time="0.569">
+    <failure message="expected [200] but found [403]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [200] but found [403]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at tests.PostmanAuthTest.oauthClientCredentialsTest(PostmanAuthTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 403 Forbidden
+Server: CloudFront
+Date: Thu, 29 Jan 2026 08:20:33 GMT
+Content-Type: text/html
+Content-Length: 1053
+Connection: keep-alive
+X-Cache: Error from cloudfront
+Via: 1.1 1b756f0023df515c59681eab51899084.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: BOM78-P7
+X-Amz-Cf-Id: nvNxCLvilPWjU5MXf9vdFjmLSIahrnYe5NB1XRbVgiTLZQNsEozxnQ==
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>ERROR: The request could not be satisfied</title>
+  </head>
+  <body>
+    <h1>403 ERROR</h1>
+    <h2>The request could not be satisfied.</h2>
+    <hr noshade="noshade" size="1px"/>
+
+This distribution is not configured to allow the HTTP request method that was used for this request. The distribution supports only cachable requests.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+    <br clear="all"/>
+
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+    <br clear="all"/>
+    <hr noshade="noshade" size="1px"/>
+    <pre>
+Generated by cloudfront (CloudFront)
+Request ID: nvNxCLvilPWjU5MXf9vdFjmLSIahrnYe5NB1XRbVgiTLZQNsEozxnQ==
+</pre>
+    <address/>
+  </body>
+</html>
+]]></system-out>
+  </testcase>
+  <testcase name="retryExampleTest" classname="tests.RetrySampleTest" time="0.273"/>
+  <testcase name="getUserMockTest" classname="tests.UserMockApiTest" time="0.05"/>
+</testsuite>

@@ -1,0 +1,12 @@
+[
+  { "name": "Vanish", "role": "QA" },
+  { "name": "Anjali", "role": "Developer" },
+  { "name": "Rahul", "role": "Automation Engineer" },
+  { "name": "Sneha", "role": "Manual Tester" },
+  { "name": "Amit", "role": "Backend Developer" },
+  { "name": "Priya", "role": "Frontend Developer" },
+  { "name": "Kiran", "role": "DevOps Engineer" },
+  { "name": "Neha", "role": "Product Manager" },
+  { "name": "Arjun", "role": "Business Analyst" },
+  { "name": "Pooja", "role": "Scrum Master" }
+]

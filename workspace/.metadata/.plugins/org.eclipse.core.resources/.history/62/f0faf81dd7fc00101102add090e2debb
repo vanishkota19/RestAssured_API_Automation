@@ -1,0 +1,31 @@
+package tests;
+
+import client.PostmanEchoClient;
+import io.restassured.response.Response;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import utils.TestDataProvider;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class DataDrivenPostTest {
+
+    @Test(dataProvider = "userData", dataProviderClass = TestDataProvider.class)
+    public void postApi_dataDrivenTest(String name, String role) {
+
+        Map<String, Object> requestBody = new HashMap<>();
+        requestBody.put("name", name);
+        requestBody.put("role", role);
+
+        Response response = PostmanEchoClient.postData(requestBody);
+
+        response.then().log().all();
+        Assert.assertEquals(response.statusCode(), 200);
+
+        Assert.assertEquals(
+                response.jsonPath().getString("json.name"), name);
+        Assert.assertEquals(
+                response.jsonPath().getString("json.role"), role);
+    }
+}

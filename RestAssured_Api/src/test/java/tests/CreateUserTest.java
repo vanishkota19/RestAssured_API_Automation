@@ -1,0 +1,48 @@
+package tests;
+
+import base.BaseTest;
+import client.UserClient;
+import io.restassured.response.Response;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import pojo.UserRequest;
+import pojo.UserResponse;
+import utils.JsonUtils;
+
+public class CreateUserTest extends BaseTest {
+
+    @Test
+    public void createUserUsingJsonFile() {
+
+        String jsonBody = JsonUtils.readJson(
+                "src/test/resources/testdata/createUser.json");
+
+        Response response = UserClient.createUser(jsonBody);
+
+        Assert.assertEquals(response.statusCode(), 403);
+        
+        if (response.getContentType() != null &&
+        	    response.getContentType().contains("application/json")) {
+
+        	    UserResponse userResponse = response.as(UserResponse.class);
+        	    Assert.assertEquals(userResponse.getName(), "Vanish");
+
+        	} else {
+        	    System.out.println("Skipping POJO validation. Non-JSON response received.");
+        	   Assert.fail("Expected JSON response but got: " + response.getContentType());
+        	}
+    }
+    
+    
+    @Test
+    public void createUserUsingPojo() {
+
+        UserRequest request = new UserRequest("Vanish", "QA Architect");
+
+        Response response = UserClient.createUser(request);
+
+        Assert.assertEquals(response.statusCode(), 403);
+    }
+
+}

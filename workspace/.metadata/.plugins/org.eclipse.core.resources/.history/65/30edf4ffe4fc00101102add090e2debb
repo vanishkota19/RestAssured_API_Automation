@@ -1,0 +1,33 @@
+package base;
+
+import com.github.tomakehurst.wiremock.WireMockServer;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import static com.github.tomakehurst.wiremock.client.WireMock.*;
+
+public class BaseMockTest {
+
+    protected WireMockServer wireMockServer;
+
+    @BeforeClass
+    public void startWireMock() {
+
+        wireMockServer = new WireMockServer(8089);
+        wireMockServer.start();
+
+        configureFor("localhost", 8089);
+
+        // ✅ STUB DEFINITION (HERE)
+        stubFor(get(urlEqualTo("/users/1"))
+            .willReturn(aResponse()
+                .withStatus(200)
+                .withHeader("Content-Type", "application/json")
+                .withBody("{ \"id\":1, \"name\":\"Vanish\", \"role\":\"QA\" }")));
+    }
+
+    @AfterClass
+    public void stopWireMock() {
+        wireMockServer.stop();
+    }
+}

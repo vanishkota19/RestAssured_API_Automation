@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="tests.AuthFlowTest">
+        <methods>
+          <include name="setup"/>
+          <include name="completeAuthFlowTest"/>
+        </methods>
+      </class> <!-- tests.AuthFlowTest -->
+      <class name="tests.HamcrestTest">
+        <methods>
+          <include name="basicHamcrestValidation"/>
+        </methods>
+      </class> <!-- tests.HamcrestTest -->
+      <class name="tests.PostmanAuthTest">
+        <methods>
+          <include name="oauthClientCredentialsTest"/>
+        </methods>
+      </class> <!-- tests.PostmanAuthTest -->
+      <class name="tests.CreateUserTest">
+        <methods>
+          <include name="setup"/>
+          <include name="createUserUsingPojo"/>
+          <include name="createUserUsingJsonFile"/>
+        </methods>
+      </class> <!-- tests.CreateUserTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -1,0 +1,42 @@
+package listeners;
+
+import base.BaseExtentTest;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import org.testng.*;
+import utils.ExtentManager;
+
+public class ExtentTestListener implements ITestListener {
+
+    @Override
+    public void onTestStart(ITestResult result) {
+        ExtentTest test =
+                ExtentManager.getExtent()
+                        .createTest(result.getMethod().getMethodName());
+
+        BaseExtentTest.getExtentTest().set(test);
+    }
+
+    @Override
+    public void onTestSuccess(ITestResult result) {
+        BaseExtentTest.getTest()
+                .log(Status.PASS, "Test Passed");
+    }
+
+    @Override
+    public void onTestFailure(ITestResult result) {
+        BaseExtentTest.getTest()
+                .log(Status.FAIL, result.getThrowable());
+    }
+
+    @Override
+    public void onTestSkipped(ITestResult result) {
+        BaseExtentTest.getTest()
+                .log(Status.SKIP, "Test Skipped");
+    }
+
+    @Override
+    public void onFinish(ITestContext context) {
+        ExtentManager.getExtent().flush();
+    }
+}

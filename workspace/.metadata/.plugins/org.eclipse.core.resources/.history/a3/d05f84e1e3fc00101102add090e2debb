@@ -1,0 +1,47 @@
+package auth;
+
+import io.restassured.specification.RequestSpecification;
+
+import static io.restassured.RestAssured.given;
+import static io.restassured.http.ContentType.JSON;
+
+public class AuthFactory {
+
+    public static RequestSpecification basicAuth(String username, String password) {
+        return given()
+                .auth()
+                .preemptive()
+                .basic(username, password)
+                .accept(JSON);
+    }
+
+    public static RequestSpecification bearerToken(String token) {
+        return given()
+                .header("Authorization", "Bearer " + token)
+                .accept(JSON);
+    }
+
+    public static RequestSpecification oauthClientCredentials(
+            String clientId,
+            String clientSecret) {
+
+        return given()
+                .auth()
+                .preemptive()
+                .basic(clientId, clientSecret)
+                .contentType("application/x-www-form-urlencoded")
+                .accept(JSON);
+    }
+    
+    public static RequestSpecification oauthClientCredentialss(
+            String clientId,
+            String clientSecret) {
+
+        return given()
+                .auth().oauth(clientSecret, clientSecret, clientId, clientSecret)
+                .preemptive()
+                .basic(clientId, clientSecret)
+                .contentType("application/x-www-form-urlencoded")
+                .accept(JSON);
+    }
+}

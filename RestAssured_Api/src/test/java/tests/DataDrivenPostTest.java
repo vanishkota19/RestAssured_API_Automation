@@ -1,0 +1,68 @@
+package tests;
+
+import client.PostmanEchoClient;
+import io.restassured.response.Response;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.BaseExtentTest;
+import utils.ExtentLogger;
+import utils.TestDataProvider;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class DataDrivenPostTest {
+
+    @Test(dataProvider = "userData", dataProviderClass = TestDataProvider.class)
+    public void postApi_dataDrivenTest(String name, String role) {
+
+        Map<String, Object> requestBody = new HashMap<>();
+        requestBody.put("name", name);
+        requestBody.put("role", role);
+
+        Response response = PostmanEchoClient.postData(requestBody);
+
+        response.then().log().all();
+        Assert.assertEquals(response.statusCode(), 200);
+
+        Assert.assertEquals(
+                response.jsonPath().getString("json.name"), name);
+        Assert.assertEquals(
+                response.jsonPath().getString("json.role"), role);
+    }
+    
+    
+    @Test(dataProvider = "jsonUserData",
+    	      dataProviderClass = TestDataProvider.class)
+    	public void postApi_jsonDataDrivenTest(Map<String, Object> requestBody) {
+
+    	    Response response = PostmanEchoClient.postData(requestBody);
+
+    	    Assert.assertEquals(response.statusCode(), 200);
+    	}
+    
+    @Test(dataProvider = "csvUserData",
+    	      dataProviderClass = TestDataProvider.class)
+    	public void postApi_csvDataDrivenTest(Map<String, String> requestData) {
+
+    	    Map<String, Object> requestBody = new HashMap<>();
+    	    requestBody.put("name", requestData.get("name"));
+    	    requestBody.put("role", requestData.get("role"));
+
+    	    Response response = PostmanEchoClient.postData(requestBody);
+
+    	    response.then().log().all();
+    	    Assert.assertEquals(response.statusCode(), 200);
+
+    	    Assert.assertEquals(
+    	            response.jsonPath().getString("json.name"),
+    	            requestData.get("name"));
+    	    
+    	 //  BaseExtentTest.getTest().info("GET Response:\n" + response.asPrettyString());
+    	   ExtentLogger.logResponse(response);
+    	   
+    }
+
+
+}

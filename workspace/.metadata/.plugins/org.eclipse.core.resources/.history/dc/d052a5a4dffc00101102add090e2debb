@@ -1,0 +1,23 @@
+package base;
+
+import io.restassured.RestAssured;
+import org.testng.annotations.BeforeClass;
+import utils.ConfigReader;
+import static com.github.tomakehurst.wiremock.client.WireMock.*;
+
+public class BaseTest {
+
+    @BeforeClass
+    public void setup() {
+        RestAssured.baseURI = ConfigReader.get("base.uri");
+        RestAssured.basePath = ConfigReader.get("base.path");
+    }
+    
+    @BeforeClass
+    public void setupMock() {
+        WireMockServer wireMockServer = new WireMockServer(8089);
+        wireMockServer.start();
+        configureFor("localhost", 8089);
+    }
+    
+}

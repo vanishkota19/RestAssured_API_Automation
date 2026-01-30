@@ -1,0 +1,17 @@
+package utils;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class JsonUtils {
+
+    public static String readJson(String filePath) {
+        try {
+            return new String(
+                Files.readAllBytes(Paths.get(filePath))
+            );
+        } catch (Exception e) {
+            throw new RuntimeException("Unable to read json file");
+        }
+    }
+}

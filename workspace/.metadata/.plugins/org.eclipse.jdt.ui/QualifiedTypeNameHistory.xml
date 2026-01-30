@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="mock.UserStubs"/>
+    <fullyQualifiedTypeName name="base.BaseExtentTest"/>
+    <fullyQualifiedTypeName name="utils.ExtentLogger"/>
+</qualifiedTypeNameHistroy>

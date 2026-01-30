@@ -1,0 +1,15 @@
+package utils;
+
+import org.testng.annotations.DataProvider;
+
+public class TestDataProvider {
+
+    @DataProvider(name = "userData")
+    public static Object[][] userData() {
+        return new Object[][]{
+                {"Vanish", "QA"},
+                {"Anjali", "Developer"},
+                {"TestUser", "Manager"}
+        };
+    }
+}

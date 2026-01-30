@@ -1,0 +1,65 @@
+package tests;
+
+import auth.AuthFactory;
+import client.PostmanEchoClient;
+import io.restassured.response.Response;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class PostmanAuthTest {
+
+    // 🔐 BASIC AUTH
+    @Test
+    public void basicAuthTest() {
+
+        Response response =
+                PostmanEchoClient.getBasicAuth(
+                        AuthFactory.basicAuth("postman", "password")
+                );
+
+        response.then().log().all();
+        Assert.assertEquals(response.statusCode(), 200);
+        Assert.assertTrue(response.jsonPath().getBoolean("authenticated"));
+    }
+
+    // 🔐 BEARER TOKEN
+    @Test
+    public void bearerTokenTest() {
+
+        String token = "sampleBearer123";
+
+        Response response =
+                PostmanEchoClient.getEcho(
+                        AuthFactory.bearerToken(token)
+                );
+
+        response.then().log().all();
+        Assert.assertEquals(response.statusCode(), 200);
+
+        String echoedToken =
+                response.jsonPath().getString("headers.authorization");
+
+        Assert.assertEquals(echoedToken, "Bearer " + token);
+    }
+
+    // 🔐 OAUTH 2.0 (Client Credentials)
+    @Test
+    public void oauthClientCredentialsTest() {
+
+        Response tokenResponse =
+                PostmanEchoClient.getOAuthToken(
+                        AuthFactory.oauthClientCredentials(
+                                "postman-client-id",
+                                "postman-client-secret"
+                        )
+                );
+
+        tokenResponse.then().log().all();
+        Assert.assertEquals(tokenResponse.statusCode(), 200);
+
+        String accessToken =
+                tokenResponse.jsonPath().getString("access_token");
+
+        Assert.assertNotNull(accessToken);
+    }
+}

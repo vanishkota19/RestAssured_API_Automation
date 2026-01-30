@@ -1,0 +1,26 @@
+package tests;
+
+import org.testng.annotations.Test;
+import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
+
+
+public class HamcrestTest {
+	
+	@Test
+	public void basicHamcrestValidation() {
+
+	    given()
+	        .when()
+	            .get("https://postman-echo.com/get?foo=bar")
+	        .then()
+	            .statusCode(200)
+	            .contentType("application/json")
+	            .body("args.foo", equalTo("bar"))
+	            .body("url", containsString("postman-echo.com"))
+	            .body("headers.host", equalTo("postman-echo.com"));
+
+	    
+	}
+
+}

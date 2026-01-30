@@ -1,0 +1,17 @@
+package base;
+
+import com.aventstack.extentreports.ExtentTest;
+
+public class BaseExtentTest {
+
+    public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+
+
+	public static ThreadLocal<ExtentTest> getExtentTest() {
+		return extentTest;
+	}
+
+	public static void setExtentTest(ThreadLocal<ExtentTest> extentTest) {
+		BaseExtentTest.extentTest = extentTest;
+	}
+}

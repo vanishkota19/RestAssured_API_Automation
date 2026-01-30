@@ -1,0 +1,36 @@
+package client;
+
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import static io.restassured.RestAssured.given;
+import static io.restassured.http.ContentType.JSON;
+
+import java.util.Map;
+
+public class PostmanEchoClient {
+
+    public static Response getBasicAuth(RequestSpecification spec) {
+        return spec.get("https://postman-echo.com/basic-auth");
+    }
+
+    public static Response getEcho(RequestSpecification spec) {
+        return spec.get("https://postman-echo.com/get");
+    }
+
+    public static Response getOAuthToken(RequestSpecification spec) {
+        return spec
+                .formParam("grant_type", "client_credentials")
+                .post("https://oauth.pstmn.io/v1/token");
+    }
+    
+   
+    public static Response postData(Map<String, Object> payload) {
+        return given()
+                .contentType(JSON)
+                .accept(JSON)
+                .body(payload)
+                .post("https://postman-echo.com/post");
+    }
+    
+    
+}

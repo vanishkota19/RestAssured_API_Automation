@@ -1,0 +1,80 @@
+package tests;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
+
+public class ApiChainingTest {
+	
+	
+	@Test
+	public void postGetDeleteFlowTest() {
+
+	    // ---------- POST ----------
+	    Map<String, Object> requestBody = new HashMap<>();
+	    requestBody.put("name", "Vanish");
+	    requestBody.put("role", "QA");
+
+	    Response postResponse =
+	        given()
+	            .contentType(ContentType.JSON)
+	            .body(requestBody)
+	        .when()
+	            .post("https://postman-echo.com/post");
+
+	    postResponse.then()
+	            .log().all()
+	            .statusCode(200);
+
+	    // Extract "id" (simulate ID generation)
+	    String id = UUID.randomUUID().toString();
+	    
+	    // ---------- GET ----------
+	    Response getResponse =
+	        given()
+	            .queryParam("id", id)
+	        .when()
+	            .get("https://postman-echo.com/get");
+
+	    getResponse.then()
+	            .log().all()
+	            .statusCode(200)
+	            .body("args.id", equalTo(id));
+	    
+	    // ---------- DELETE ----------
+	    Response deleteResponse =
+	        given()
+	            .queryParam("id", id)
+	        .when()
+	            .delete("https://postman-echo.com/delete");
+
+	    deleteResponse.then()
+	            .log().all()
+	            .statusCode(200)
+	            .body("args.id", equalTo(id));
+	    
+	    // ---------- GET after DELETE ----------
+	    Response getAfterDelete =
+	        given()
+	            .queryParam("id", id)
+	        .when()
+	            .get("https://postman-echo.com/status/404");
+
+	    getAfterDelete.then()
+	            .log().all()
+	            .statusCode(404);
+	}
+
+
+
+
+
+}
+

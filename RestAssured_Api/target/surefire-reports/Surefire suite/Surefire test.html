@@ -1,0 +1,514 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/4/1</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 29 13:50:21 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>13 seconds (13375 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.HamcrestTest.basicHamcrestValidation()'><b>basicHamcrestValidation</b><br>Test class: tests.HamcrestTest</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+JSON path ids doesn&apos;t match.
+Expected: a collection with size &lt;4&gt;
+  Actual: null
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at tests.HamcrestTest.basicHamcrestValidation(HamcrestTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace217679065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace217679065'><pre>java.lang.AssertionError: 1 expectation failed.
+JSON path ids doesn&apos;t match.
+Expected: a collection with size &lt;4&gt;
+  Actual: null
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at tests.HamcrestTest.basicHamcrestValidation(HamcrestTest.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.HamcrestTest@53ce1329</td></tr>
+<tr>
+<td title='tests.CreateUserTest.createUserUsingPojo()'><b>createUserUsingPojo</b><br>Test class: tests.CreateUserTest</td>
+<td><div><pre>java.lang.AssertionError: expected [403] but found [404]
+	at tests.CreateUserTest.createUserUsingPojo(CreateUserTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace497877502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace497877502'><pre>java.lang.AssertionError: expected [403] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at tests.CreateUserTest.createUserUsingPojo(CreateUserTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateUserTest@4803b726</td></tr>
+<tr>
+<td title='tests.CreateUserTest.createUserUsingJsonFile()'><b>createUserUsingJsonFile</b><br>Test class: tests.CreateUserTest</td>
+<td><div><pre>java.lang.AssertionError: expected [403] but found [404]
+	at tests.CreateUserTest.createUserUsingJsonFile(CreateUserTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace371054890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace371054890'><pre>java.lang.AssertionError: expected [403] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at tests.CreateUserTest.createUserUsingJsonFile(CreateUserTest.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateUserTest@4803b726</td></tr>
+<tr>
+<td title='tests.PostmanAuthTest.oauthClientCredentialsTest()'><b>oauthClientCredentialsTest</b><br>Test class: tests.PostmanAuthTest</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [403]
+	at tests.PostmanAuthTest.oauthClientCredentialsTest(PostmanAuthTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1634697653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1634697653'><pre>java.lang.AssertionError: expected [200] but found [403]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at tests.PostmanAuthTest.oauthClientCredentialsTest(PostmanAuthTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.PostmanAuthTest@316bcf94</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Vanish, role=QA}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.PostmanAuthTest.basicAuthTest()'><b>basicAuthTest</b><br>Test class: tests.PostmanAuthTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PostmanAuthTest@316bcf94</td></tr>
+<tr>
+<td title='tests.PostmanAuthTest.bearerTokenTest()'><b>bearerTokenTest</b><br>Test class: tests.PostmanAuthTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PostmanAuthTest@316bcf94</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Priya, role=Frontend Developer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Kiran, role=DevOps Engineer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Anjali, role=Developer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Neha, role=Product Manager}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Pooja, role=Scrum Master}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Vanish, role=QA}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Kiran, role=DevOps Engineer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Sneha, role=Manual Tester}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.UserMockApiTest.getUserMockTest()'><b>getUserMockTest</b><br>Test class: tests.UserMockApiTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UserMockApiTest@3e11f9e9</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Arjun, role=Business Analyst}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_dataDrivenTest()'><b>postApi_dataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: Anjali, Developer</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Anjali, role=Developer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Pooja, role=Scrum Master}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Rahul, role=Automation Engineer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_dataDrivenTest()'><b>postApi_dataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: TestUser, Manager</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Priya, role=Frontend Developer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_dataDrivenTest()'><b>postApi_dataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: Vanish, QA</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Amit, role=Backend Developer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Neha, role=Product Manager}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Amit, role=Backend Developer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_jsonDataDrivenTest()'><b>postApi_jsonDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Arjun, role=Business Analyst}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Sneha, role=Manual Tester}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+<tr>
+<td title='tests.RetrySampleTest.retryExampleTest()'><b>retryExampleTest</b><br>Test class: tests.RetrySampleTest</td>
+<td></td>
+<td>0</td>
+<td>tests.RetrySampleTest@6404f418</td></tr>
+<tr>
+<td title='tests.DataDrivenPostTest.postApi_csvDataDrivenTest()'><b>postApi_csvDataDrivenTest</b><br>Test class: tests.DataDrivenPostTest<br>Parameters: {name=Rahul, role=Automation Engineer}</td>
+<td></td>
+<td>0</td>
+<td>tests.DataDrivenPostTest@ffaa6af</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.AuthFlowTest.completeAuthFlowTest()'><b>completeAuthFlowTest</b><br>Test class: tests.AuthFlowTest</td>
+<td><div><pre>org.testng.SkipException: Login did not return JSON
+	at tests.AuthFlowTest.completeAuthFlowTest(AuthFlowTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace993208674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace993208674'><pre>org.testng.SkipException: Login did not return JSON
+	at tests.AuthFlowTest.completeAuthFlowTest(AuthFlowTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>2</td>
+<td>tests.AuthFlowTest@6e0f5f7f</td></tr>
+</table><p>
+</body>
+</html>

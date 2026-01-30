@@ -1,0 +1,67 @@
+package tests;
+
+import base.BaseTest;
+import client.AuthClient;
+import io.restassured.response.Response;
+import org.testng.Assert;
+import org.testng.SkipException;
+import org.testng.annotations.Test;
+import pojo.*;
+
+public class AuthFlowTest extends BaseTest {
+
+    @Test
+    public void completeAuthFlowTest() {
+
+        // 🔐 LOGIN
+        LoginRequest loginRequest =
+                new LoginRequest("michaelw", "michaelwpass", 30);
+
+        Response loginResponse = AuthClient.login(loginRequest);
+        loginResponse.then().log().all();
+
+        if (!loginResponse.getContentType().contains("application/json")) {
+            throw new SkipException("Login did not return JSON");
+        }
+
+        Assert.assertEquals(loginResponse.statusCode(), 200);
+
+        LoginResponse login =
+                loginResponse.as(LoginResponse.class);
+
+        String accessToken = login.getAccessToken();
+        String refreshToken = login.getRefreshToken();
+
+        Assert.assertNotNull(accessToken);
+        Assert.assertNotNull(refreshToken);
+
+        // 👤 GET CURRENT USER
+        Response meResponse 
+        =
+                AuthClient.getCurrentUser(accessToken);
+
+        meResponse.then().log().all();
+        Assert.assertEquals(meResponse.statusCode(), 200);
+
+        UserMeResponse me =
+                meResponse.as(UserMeResponse.class);
+
+        Assert.assertEquals(me.getUsername(), "emilys");
+
+        // 🔄 REFRESH TOKEN
+        RefreshRequest refreshRequest =
+                new RefreshRequest(refreshToken, 30);
+
+        Response refreshResponse =
+                AuthClient.refreshToken(refreshRequest);
+
+        refreshResponse.then().log().all();
+        Assert.assertEquals(refreshResponse.statusCode(), 200);
+
+        LoginResponse refreshed =
+                refreshResponse.as(LoginResponse.class);
+
+        Assert.assertNotNull(refreshed.getAccessToken());
+    }
+}
+

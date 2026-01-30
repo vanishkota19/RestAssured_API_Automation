@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="32" passed="27" failed="4" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-29T13:50:21 IST" name="Surefire suite" finished-at="2026-01-29T13:50:34 IST" duration-ms="13375">
+    <groups>
+    </groups>
+    <test started-at="2026-01-29T13:50:21 IST" name="Surefire test" finished-at="2026-01-29T13:50:34 IST" duration-ms="13375">
+      <class name="tests.AuthFlowTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AuthFlowTest@6e0f5f7f]" started-at="2026-01-29T13:50:21 IST" name="setup" finished-at="2026-01-29T13:50:22 IST" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="completeAuthFlowTest()[pri:0, instance:tests.AuthFlowTest@6e0f5f7f]" started-at="2026-01-29T13:50:22 IST" name="completeAuthFlowTest" finished-at="2026-01-29T13:50:24 IST" duration-ms="2400" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Login did not return JSON]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Login did not return JSON
+at tests.AuthFlowTest.completeAuthFlowTest(AuthFlowTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeAuthFlowTest -->
+      </class> <!-- tests.AuthFlowTest -->
+      <class name="tests.RetrySampleTest">
+        <test-method signature="retryExampleTest()[pri:0, instance:tests.RetrySampleTest@6404f418]" started-at="2026-01-29T13:50:33 IST" name="retryExampleTest" finished-at="2026-01-29T13:50:33 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retryExampleTest -->
+      </class> <!-- tests.RetrySampleTest -->
+      <class name="tests.CreateUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreateUserTest@4803b726]" started-at="2026-01-29T13:50:24 IST" name="setup" finished-at="2026-01-29T13:50:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createUserUsingJsonFile()[pri:0, instance:tests.CreateUserTest@4803b726]" started-at="2026-01-29T13:50:24 IST" name="createUserUsingJsonFile" finished-at="2026-01-29T13:50:24 IST" duration-ms="338" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [403] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [403] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at tests.CreateUserTest.createUserUsingJsonFile(CreateUserTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserUsingJsonFile -->
+        <test-method signature="createUserUsingPojo()[pri:0, instance:tests.CreateUserTest@4803b726]" started-at="2026-01-29T13:50:24 IST" name="createUserUsingPojo" finished-at="2026-01-29T13:50:25 IST" duration-ms="281" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [403] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [403] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at tests.CreateUserTest.createUserUsingPojo(CreateUserTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserUsingPojo -->
+      </class> <!-- tests.CreateUserTest -->
+      <class name="tests.HamcrestTest">
+        <test-method signature="basicHamcrestValidation()[pri:0, instance:tests.HamcrestTest@53ce1329]" started-at="2026-01-29T13:50:32 IST" name="basicHamcrestValidation" finished-at="2026-01-29T13:50:32 IST" duration-ms="420" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path ids doesn't match.
+Expected: a collection with size <4>
+  Actual: null
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path ids doesn't match.
+Expected: a collection with size <4>
+  Actual: null
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at tests.HamcrestTest.basicHamcrestValidation(HamcrestTest.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicHamcrestValidation -->
+      </class> <!-- tests.HamcrestTest -->
+      <class name="tests.PostmanAuthTest">
+        <test-method signature="basicAuthTest()[pri:0, instance:tests.PostmanAuthTest@316bcf94]" started-at="2026-01-29T13:50:32 IST" name="basicAuthTest" finished-at="2026-01-29T13:50:32 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicAuthTest -->
+        <test-method signature="bearerTokenTest()[pri:0, instance:tests.PostmanAuthTest@316bcf94]" started-at="2026-01-29T13:50:32 IST" name="bearerTokenTest" finished-at="2026-01-29T13:50:33 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bearerTokenTest -->
+        <test-method signature="oauthClientCredentialsTest()[pri:0, instance:tests.PostmanAuthTest@316bcf94]" started-at="2026-01-29T13:50:33 IST" name="oauthClientCredentialsTest" finished-at="2026-01-29T13:50:33 IST" duration-ms="571" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [403]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [403]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at tests.PostmanAuthTest.oauthClientCredentialsTest(PostmanAuthTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oauthClientCredentialsTest -->
+      </class> <!-- tests.PostmanAuthTest -->
+      <class name="tests.DataDrivenPostTest">
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:25 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:26 IST" duration-ms="866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Vanish, role=QA}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:26 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:26 IST" duration-ms="290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Anjali, role=Developer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:26 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:26 IST" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Rahul, role=Automation Engineer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:26 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:26 IST" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Sneha, role=Manual Tester}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:26 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:27 IST" duration-ms="281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Amit, role=Backend Developer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:27 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:27 IST" duration-ms="284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Priya, role=Frontend Developer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:27 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:27 IST" duration-ms="282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Kiran, role=DevOps Engineer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:27 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:28 IST" duration-ms="287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Neha, role=Product Manager}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:28 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:28 IST" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Arjun, role=Business Analyst}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_csvDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:28 IST" name="postApi_csvDataDrivenTest" data-provider="csvUserData" finished-at="2026-01-29T13:50:28 IST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Pooja, role=Scrum Master}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_csvDataDrivenTest -->
+        <test-method signature="postApi_dataDrivenTest(java.lang.String,java.lang.String)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:28 IST" name="postApi_dataDrivenTest" data-provider="userData" finished-at="2026-01-29T13:50:28 IST" duration-ms="308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vanish]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_dataDrivenTest -->
+        <test-method signature="postApi_dataDrivenTest(java.lang.String,java.lang.String)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:28 IST" name="postApi_dataDrivenTest" data-provider="userData" finished-at="2026-01-29T13:50:29 IST" duration-ms="284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anjali]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Developer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_dataDrivenTest -->
+        <test-method signature="postApi_dataDrivenTest(java.lang.String,java.lang.String)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:29 IST" name="postApi_dataDrivenTest" data-provider="userData" finished-at="2026-01-29T13:50:29 IST" duration-ms="338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_dataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:29 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:29 IST" duration-ms="276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Vanish, role=QA}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:29 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:30 IST" duration-ms="259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Anjali, role=Developer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:30 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:30 IST" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Rahul, role=Automation Engineer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:30 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:30 IST" duration-ms="253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Sneha, role=Manual Tester}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:30 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:30 IST" duration-ms="253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Amit, role=Backend Developer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:30 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:31 IST" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Priya, role=Frontend Developer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:31 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:31 IST" duration-ms="248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Kiran, role=DevOps Engineer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:31 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:31 IST" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Neha, role=Product Manager}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:31 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:31 IST" duration-ms="255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Arjun, role=Business Analyst}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+        <test-method signature="postApi_jsonDataDrivenTest(java.util.Map)[pri:0, instance:tests.DataDrivenPostTest@ffaa6af]" started-at="2026-01-29T13:50:31 IST" name="postApi_jsonDataDrivenTest" data-provider="jsonUserData" finished-at="2026-01-29T13:50:32 IST" duration-ms="272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Pooja, role=Scrum Master}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApi_jsonDataDrivenTest -->
+      </class> <!-- tests.DataDrivenPostTest -->
+      <class name="tests.UserMockApiTest">
+        <test-method is-config="true" signature="startWireMock()[pri:0, instance:tests.UserMockApiTest@3e11f9e9]" started-at="2026-01-29T13:50:33 IST" name="startWireMock" finished-at="2026-01-29T13:50:34 IST" duration-ms="915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWireMock -->
+        <test-method signature="getUserMockTest()[pri:0, instance:tests.UserMockApiTest@3e11f9e9]" started-at="2026-01-29T13:50:34 IST" name="getUserMockTest" finished-at="2026-01-29T13:50:34 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserMockTest -->
+        <test-method is-config="true" signature="stopWireMock()[pri:0, instance:tests.UserMockApiTest@3e11f9e9]" started-at="2026-01-29T13:50:34 IST" name="stopWireMock" finished-at="2026-01-29T13:50:34 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopWireMock -->
+      </class> <!-- tests.UserMockApiTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
